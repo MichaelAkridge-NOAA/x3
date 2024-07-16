@@ -23,7 +23,7 @@ public class ConvertSUDToWAV {
         long time0 = System.currentTimeMillis();
 
         SudParams sudParams = new SudParams();
-        sudParams.setVerbose(false);
+        sudParams.setVerbose(true); // Enable verbose for debugging
         sudParams.setFileSave(false, true, true, false);
         sudParams.setSudEnable(true, true, true);
 
@@ -31,6 +31,7 @@ public class ConvertSUDToWAV {
         File outputDir = new File(outputFilePath).getParentFile();
         if (outputDir != null && !outputDir.exists()) {
             outputDir.mkdirs();
+            System.out.println("Created output directory: " + outputDir.getAbsolutePath());
         }
 
         SudFileExpander sudFileExpander = new SudFileExpander(new File(inputFilePath), sudParams);
@@ -43,5 +44,13 @@ public class ConvertSUDToWAV {
 
         long time1 = System.currentTimeMillis();
         System.out.println("Processing time: " + (time1 - time0));
+
+        // Check if the output file was created
+        File outputFile = new File(outputFilePath);
+        if (outputFile.exists()) {
+            System.out.println("Output file created: " + outputFile.getAbsolutePath());
+        } else {
+            System.out.println("Output file not created: " + outputFile.getAbsolutePath());
+        }
     }
 }
