@@ -26,7 +26,7 @@ public class SudParams implements Cloneable {
 //	/**
 //	 * True to save wav files. 
 //	 */
-//	public boolean saveWav = true; 
+	public boolean saveWav = true; 
 //	
 //	/**
 //	 * True to save csv files. 
