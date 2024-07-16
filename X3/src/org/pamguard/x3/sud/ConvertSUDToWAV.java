@@ -24,7 +24,7 @@ public class ConvertSUDToWAV {
 
         SudParams sudParams = new SudParams();
         sudParams.setVerbose(true); // Enable verbose for debugging
-        sudParams.setFileSave(false, true, true, false);
+        sudParams.setFileSave(true, true, true, true); // Enable file saving for all types
         sudParams.setSudEnable(true, true, true);
 
         // Create output directory if it doesn't exist
