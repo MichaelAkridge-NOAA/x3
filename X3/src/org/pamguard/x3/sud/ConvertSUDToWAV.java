@@ -26,6 +26,13 @@ public class ConvertSUDToWAV {
         sudParams.setVerbose(true); // Enable verbose for debugging
         sudParams.setFileSave(true, true, true, true); // Enable file saving for all types
         sudParams.setSudEnable(true, true, true);
+        
+        // Print out the file save settings for debugging
+        System.out.println("File save settings: ");
+        System.out.println("Save WAV: " + sudParams.isFileSave(ISudarDataHandler.WAV_FTYPE, "wav"));
+        System.out.println("Save CSV: " + sudParams.isFileSave(ISudarDataHandler.CSV_FTYPE, "csv"));
+        System.out.println("Save XML: " + sudParams.isFileSave(ISudarDataHandler.XML_FTYPE, "xml"));
+        System.out.println("Save Clicks: " + sudParams.isFileSave(ISudarDataHandler.TXT_FTYPE, "bcl"));
 
         // Create output directory if it doesn't exist
         File outputDir = new File(outputFilePath).getParentFile();
