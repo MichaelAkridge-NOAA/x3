@@ -26,7 +26,12 @@ public class ConvertSUDToWAV {
         sudParams.setVerbose(false);
         sudParams.setFileSave(false, true, true, false);
         sudParams.setSudEnable(true, true, true);
-        sudParams.setOutFilePath(outputFilePath);
+
+        // Create output directory if it doesn't exist
+        File outputDir = new File(outputFilePath).getParentFile();
+        if (outputDir != null && !outputDir.exists()) {
+            outputDir.mkdirs();
+        }
 
         SudFileExpander sudFileExpander = new SudFileExpander(new File(inputFilePath), sudParams);
 
