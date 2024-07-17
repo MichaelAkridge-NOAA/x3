@@ -31,7 +31,7 @@ public class SudParams implements Cloneable {
 //	/**
 //	 * True to save csv files. 
 //	 */
-//	public boolean saveCSV = true; 
+	public boolean saveCSV = true; 
 //	
 //	/**
 //	 * True to save click diles
