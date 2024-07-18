@@ -20,7 +20,7 @@ public class SudarListenerTest {
 	public static void main(String[] args) {
 
 		long time0 = System.currentTimeMillis();
-		String filePath = "/Users/au671271/Library/CloudStorage/GoogleDrive-macster110@gmail.com/My Drive/PAMGuard_dev/sud_decompression/clickdet_example/7140.221020162018.sud";
+		String filePath = "/PAMGuard_dev/sud_decompression/clickdet_example/7140.221020162018.sud";
 		
 		SudParams sudParams = new SudParams(); 
 		sudParams.saveFolder = null;
