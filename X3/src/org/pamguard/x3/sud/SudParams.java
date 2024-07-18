@@ -16,7 +16,7 @@ public class SudParams implements Cloneable {
 //	/**
 //	 * True to save meta data such as xml files. 
 //	 */
-	public boolean saveXML = true;
+//	public boolean saveXML = true;
 
 	/**
 	 * True to zero pad the wav files.
@@ -26,12 +26,12 @@ public class SudParams implements Cloneable {
 //	/**
 //	 * True to save wav files. 
 //	 */
-	public boolean saveWav = true; 
+//	public boolean saveWav = true; 
 //	
 //	/**
 //	 * True to save csv files. 
 //	 */
-	public boolean saveCSV = true; 
+//	public boolean saveCSV = true; 
 //	
 //	/**
 //	 * True to save click diles
