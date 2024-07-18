@@ -5,6 +5,7 @@ import java.io.IOException;
 
 /**
  * Basic test for opening a .sud file and converting it to .wav
+ * @author Michael Akridge
  */
 public class ConvertSUDToWAV {
 
